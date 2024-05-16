@@ -17,8 +17,14 @@ export default class Kutya {
     }
 
     /*privát adattagok elérése GETTER-rel*/
+    //igy már eltudom érni kivűről, de megváltoztani nem
     get nev() {
         return this.#nev;
+    }
+
+    //Amelyik adattagok modostihatok osztályon kívűl, ahoz SEt-tet írok
+    set mondat(szoveg){
+        this.#mondat=szoveg;
     }
 
     //tagfügvény, az adattagokon végez műveleteket
